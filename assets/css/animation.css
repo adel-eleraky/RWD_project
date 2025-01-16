@@ -1,0 +1,266 @@
+@keyframes linearGradient_1 {
+  0% {
+    background: linear-gradient(18deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  5% {
+    background: linear-gradient(18deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  10% {
+    background: linear-gradient(36deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  15% {
+    background: linear-gradient(54deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  20% {
+    background: linear-gradient(72deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  25% {
+    background: linear-gradient(90deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  30% {
+    background: linear-gradient(108deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  35% {
+    background: linear-gradient(126deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  40% {
+    background: linear-gradient(144deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  45% {
+    background: linear-gradient(162deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  50% {
+    background: linear-gradient(180deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  55% {
+    background: linear-gradient(198deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  60% {
+    background: linear-gradient(216deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  65% {
+    background: linear-gradient(234deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  70% {
+    background: linear-gradient(252deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  75% {
+    background: linear-gradient(270deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  80% {
+    background: linear-gradient(288deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  85% {
+    background: linear-gradient(306deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  90% {
+    background: linear-gradient(324deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  95% {
+    background: linear-gradient(342deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+  100% {
+    background: linear-gradient(360deg, #91683A 10.92%, #D9C28C 92.92%);
+  }
+}
+header .header-img::before {
+  background: linear-gradient(18deg, #91683A 10.92%, #D9C28C 92.92%);
+  animation: linearGradient_1 0.8s infinite linear;
+}
+
+@keyframes linearGradient_2 {
+  0% {
+    background: linear-gradient(18deg, #EDDCC8, white);
+  }
+  5% {
+    background: linear-gradient(18deg, #EDDCC8, white);
+  }
+  10% {
+    background: linear-gradient(36deg, #EDDCC8, white);
+  }
+  15% {
+    background: linear-gradient(54deg, #EDDCC8, white);
+  }
+  20% {
+    background: linear-gradient(72deg, #EDDCC8, white);
+  }
+  25% {
+    background: linear-gradient(90deg, #EDDCC8, white);
+  }
+  30% {
+    background: linear-gradient(108deg, #EDDCC8, white);
+  }
+  35% {
+    background: linear-gradient(126deg, #EDDCC8, white);
+  }
+  40% {
+    background: linear-gradient(144deg, #EDDCC8, white);
+  }
+  45% {
+    background: linear-gradient(162deg, #EDDCC8, white);
+  }
+  50% {
+    background: linear-gradient(180deg, #EDDCC8, white);
+  }
+  55% {
+    background: linear-gradient(198deg, #EDDCC8, white);
+  }
+  60% {
+    background: linear-gradient(216deg, #EDDCC8, white);
+  }
+  65% {
+    background: linear-gradient(234deg, #EDDCC8, white);
+  }
+  70% {
+    background: linear-gradient(252deg, #EDDCC8, white);
+  }
+  75% {
+    background: linear-gradient(270deg, #EDDCC8, white);
+  }
+  80% {
+    background: linear-gradient(288deg, #EDDCC8, white);
+  }
+  85% {
+    background: linear-gradient(306deg, #EDDCC8, white);
+  }
+  90% {
+    background: linear-gradient(324deg, #EDDCC8, white);
+  }
+  95% {
+    background: linear-gradient(342deg, #EDDCC8, white);
+  }
+  100% {
+    background: linear-gradient(360deg, #EDDCC8, white);
+  }
+}
+.category-card.top::before {
+  background: linear-gradient(18deg);
+  animation: linearGradient_2 0.8s infinite linear;
+}
+
+@keyframes linearGradient_3 {
+  0% {
+    background: linear-gradient(18deg, white, #EDDCC8);
+  }
+  5% {
+    background: linear-gradient(18deg, white, #EDDCC8);
+  }
+  10% {
+    background: linear-gradient(36deg, white, #EDDCC8);
+  }
+  15% {
+    background: linear-gradient(54deg, white, #EDDCC8);
+  }
+  20% {
+    background: linear-gradient(72deg, white, #EDDCC8);
+  }
+  25% {
+    background: linear-gradient(90deg, white, #EDDCC8);
+  }
+  30% {
+    background: linear-gradient(108deg, white, #EDDCC8);
+  }
+  35% {
+    background: linear-gradient(126deg, white, #EDDCC8);
+  }
+  40% {
+    background: linear-gradient(144deg, white, #EDDCC8);
+  }
+  45% {
+    background: linear-gradient(162deg, white, #EDDCC8);
+  }
+  50% {
+    background: linear-gradient(180deg, white, #EDDCC8);
+  }
+  55% {
+    background: linear-gradient(198deg, white, #EDDCC8);
+  }
+  60% {
+    background: linear-gradient(216deg, white, #EDDCC8);
+  }
+  65% {
+    background: linear-gradient(234deg, white, #EDDCC8);
+  }
+  70% {
+    background: linear-gradient(252deg, white, #EDDCC8);
+  }
+  75% {
+    background: linear-gradient(270deg, white, #EDDCC8);
+  }
+  80% {
+    background: linear-gradient(288deg, white, #EDDCC8);
+  }
+  85% {
+    background: linear-gradient(306deg, white, #EDDCC8);
+  }
+  90% {
+    background: linear-gradient(324deg, white, #EDDCC8);
+  }
+  95% {
+    background: linear-gradient(342deg, white, #EDDCC8);
+  }
+  100% {
+    background: linear-gradient(360deg, white, #EDDCC8);
+  }
+}
+.category-card.bottom::before {
+  background: linear-gradient(18deg);
+  animation: linearGradient_3 0.8s infinite linear;
+}
+
+@keyframes badge_1_3_animation {
+  0% {
+    top: 100%;
+  }
+  25% {
+    top: 105%;
+  }
+  50% {
+    top: 110%;
+  }
+  75% {
+    top: 105%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+header .img-column .header-img-badge.badge-1 {
+  animation-name: badge_1_3_animation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+header .img-column .header-img-badge.badge-3 {
+  animation-name: badge_1_3_animation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes badge_2_animation {
+  0% {
+    top: -45px;
+  }
+  25% {
+    top: -70px;
+  }
+  50% {
+    top: -75px;
+  }
+  75% {
+    top: -70px;
+  }
+  100% {
+    top: -45px;
+  }
+}
+header .img-column .header-img-badge.badge-2 {
+  animation-name: badge_2_animation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/*# sourceMappingURL=animation.css.map */

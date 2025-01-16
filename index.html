@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="first-nav ">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-4 col-md-2">
+                        <div class='d-flex'>
+                            <button class="btn btn-primary navbar-toggler d-none" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#navOffcanvas"
+                                aria-controls="navOffcanvas"><i class="fa-solid fa-bars fs-2 ms-3"
+                                    style="color: #7b5309 "></i></button>
+                            <a href="/">
+                                <img src="./assets/images/Logo.png" alt="" class="img-fluid logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 nav-links-col">
+                        <ul class='nav-links d-flex justify-content-center m-0 p-0'>
+                            <a href="#campains" class='nav-link'>
+                                <li class="mx-3">
+                                    الحملات
+                                </li>
+                            </a>
+                            <a href="#donation-opportunities" class='nav-link'>
+                                <li class="mx-3">
+                                    فرص التبرع
+                                </li>
+                            </a>
+                            <a href="#cases" class='nav-link'>
+                                <li class="mx-3">
+                                    الحالات
+                                </li>
+                            </a>
+                            <a href="#contact" class='nav-link'>
+                                <li class="mx-3">
+                                    تواصل معنا
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-md-2 ">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <div class="dropdown">
+                                <a href="" data-bs-toggle="dropdown" aria-expanded="false"
+                                    class="nav-link dropdown-toggle acc_link d-flex align-items-center justify-content-center"
+                                    href="#">
+                                    <i class="fa-regular fa-user acc_logo fs-3" style="color: #2b373d"></i>
+                                </a>
+                                <ul class="dropdown-menu text-center">
+                                    <li><a class="dropdown-item" href="#">تسجيل الدخول</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#"> انشاء حساب</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <div class='position-relative pe-2 dropdown-toggle notification_icon' data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-bell fs-2"></i>
+                                    <span class="position-absolute badge rounded-pill">
+                                        2
+                                    </span>
+                                </div>
+                                <ul class="dropdown-menu text-center">
+                                    <li><a class="dropdown-item" href="#"> 
+                                        notification 1
+                                    </a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#"> 
+                                        notification 2
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end" data-bs-scroll="false" tabIndex="-1" id="navOffcanvas"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <img src="./assets/images/Logo.png" alt="" class="img-fluid logo" />
+        </div>
+        <div class="offcanvas-body">
+            <div class="links py-3">
+                <a href="/">الرئيسية </a>
+                <a href="#campains"> الحملات</a>
+                <a href="#donation-opportunities"> قنوات التبرع </a>
+                <a href="#cases"> الحالات</a>
+                <a href="#contact"> تواصل معنا </a>
+                <a href="about-us"> من نحن </a>
+            </div>
+        </div>
+    </div>
+    <header class='position-relative'>
+        <div class="container-fluid">
+            <div class="row align-items-center" style="padding-top: 100px;">
+                <div class="col-12 col-lg-6 pe-0 verse-column  mt-lg-0 mt-4 pt-lg-0 pt-4" data-aos="fade-down"
+                    data-aos-duration="2000">
+                    <div class="content w-75 mx-auto ">
+                        <img src="./assets/images/Group.png" alt="" class="img-fluid mb-3" />
+                        <p class="fw-bold fs-1" style="color: #343D40">قــــــــال الله تعالى :</p>
+                        <p class='verse'>
+                            <img src="./assets/images/verse.png" alt="" class="img-fluid" />
+                        </p>
+                        <Link to='/cases'>
+                        <button class='btn rounded text-white px-4 d-flex align-items-center justify-content-between'>
+                            تبرع الان <i class="fa-solid fa-arrow-left me-2" style="color: #ffffff"></i> </button>
+                        </Link>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 img-column text-center position-relative" style="z-index: 2"
+                    data-aos="fade-down" data-aos-duration="2000">
+                    <div class="header-img mx-auto">
+                        <img src="./assets/images/header-img.png" alt="" class="img-fluid " />
+                        <img src="./assets/images/header-img-badge-1.png" alt=""
+                            class="img-fluid header-img-badge badge-1" />
+                        <img src="./assets/images/header-img-badge-2.png" alt=""
+                            class="img-fluid header-img-badge badge-2" />
+                        <img src="./assets/images/header-img-badge-3.png" alt=""
+                            class="img-fluid header-img-badge badge-3" />
+                        <p class="quote quote-1 bg-white"> ما نقص مالٌ من صدقةٍ </p>
+                        <p class="quote quote-2 bg-white"> الصدقة تطفئ الخطيئة كما يطفئ الماء النار </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/images/header-bg-img-1.png" alt="" class="img-fluid position-absolute top-0 start-0" />
+        <img src="./assets/images/header-bg-img-2.png" alt="" class="img-fluid position-absolute top-0 start-0" />
+    </header>
+    <section class="Campaigns py-5" id="campains">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5 mb-5 mb-lg-0 content">
+                    <p class="sec-title mb-3 mt-5"> الحملات </p>
+                    <p class="content"> هذه الحملات تعطي فرصة للناس للتبرع بالمال أو بالخدمات أو بالدعوات لصالح منظمات
+                        غير ربحية. </p>
+                    <Link to='/cases/Campaigns'>
+                    <button class="btn more-btn"> رؤية المزيد <i class='bi bi-arrow-left'></i> </button>
+                    </Link>
+                </div>
+                <div class="col-12 col-lg-7 d-flex justify-content-center">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-6 campaign-card" key={campaign._id}>
+                            <div class="CampaignCard mb-5" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="./assets/images/marriage.jpeg" alt="" class="img-fluid w-100 mb-3" />
+                                <div class="content p-2">
+                                    <div class="title text-center mb-3 fw-bold">حملة تزويج الشباب الفقير</div>
+                                    <div class="description text-center mb-3"> ساهم معنا في توفير تكاليف زواج شباب فقراء
+                                        وساهم في بناء بيت مسلم</div>
+                                    <div class="money_section mb-3">
+                                        <div class="progress mb-2" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style=" width: 20% "></div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <p class='m-0'> EGP 1000000 </p>
+                                                <p class='m-0 fw-bold'> الهدف </p>
+                                            </div>
+                                            <div>
+                                                <p class='m-0'> EGP 800000
+                                                </p>
+                                                <p class='m-0 fw-bold'> المتبقى </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time-left d-flex justify-content-between mb-3 pb-2 border-bottom">
+                                        <div class="days text-dark fw-bold">12 <br />يوم</div>
+                                        <div class="hours text-dark fw-bold">5<br />ساعات </div>
+                                        <div class="minutes text-dark fw-bold">53 <br />دقيقة</div>
+                                        <div class="seconds text-dark fw-bold">10 <br />ثوانى</div>
+                                    </div>
+                                    <div class="donation ">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text  rounded-0 rounded-end" id="basic-addon1">
+                                                <i class="fa-solid fa-money-bill-1-wave"></i> </span>
+                                            <input type="number" class="form-control rounded-0 rounded-start"
+                                                placeholder="ادخل قيمة
+                                            التبرع " />
+                                        </div>
+                                        <button class='donate-button btn text-white w-100'>تبرع
+                                            الان</button>
+                                    </div>
+                                    <div class="charity-sec d-flex justify-content-between align-items-center mt-3">
+                                        <img src="./assets/images/resala.jpeg" alt=""
+                                            class="img-fluid d-block charity-img" />
+                                        <p class="charity-name mb-0 mb-0 ms-auto me-2 fw-bold">رسالة</p>
+                                        <button class='btn chat-btn'> تحدث الان </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 campaign-card" key={campaign._id}>
+                            <div class="CampaignCard mb-5" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="./assets/images/marriage.jpeg" alt="" class="img-fluid w-100 mb-3" />
+                                <div class="content p-2">
+                                    <div class="title text-center mb-3 fw-bold">حملة تزويج الشباب الفقير</div>
+                                    <div class="description text-center mb-3"> ساهم معنا في توفير تكاليف زواج شباب فقراء
+                                        وساهم في بناء بيت مسلم</div>
+                                    <div class="money_section mb-3">
+                                        <div class="progress mb-2" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style=" width: 20% "></div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <p class='m-0'> EGP 1000000 </p>
+                                                <p class='m-0 fw-bold'> الهدف </p>
+                                            </div>
+                                            <div>
+                                                <p class='m-0'> EGP 800000
+                                                </p>
+                                                <p class='m-0 fw-bold'> المتبقى </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time-left d-flex justify-content-between mb-3 pb-2 border-bottom">
+                                        <div class="days text-dark fw-bold">12 <br />يوم</div>
+                                        <div class="hours text-dark fw-bold">5<br />ساعات </div>
+                                        <div class="minutes text-dark fw-bold">53 <br />دقيقة</div>
+                                        <div class="seconds text-dark fw-bold">10 <br />ثوانى</div>
+                                    </div>
+                                    <div class="donation ">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text  rounded-0 rounded-end" id="basic-addon1">
+                                                <i class="fa-solid fa-money-bill-1-wave"></i> </span>
+                                            <input type="number" class="form-control rounded-0 rounded-start"
+                                                placeholder="ادخل قيمة
+                                            التبرع " />
+                                        </div>
+                                        <button class='donate-button btn text-white w-100'>تبرع
+                                            الان</button>
+                                    </div>
+                                    <div class="charity-sec d-flex justify-content-between align-items-center mt-3">
+                                        <img src="./assets/images/resala.jpeg" alt=""
+                                            class="img-fluid d-block charity-img" />
+                                        <p class="charity-name mb-0 mb-0 ms-auto me-2 fw-bold">رسالة</p>
+                                        <button class='btn chat-btn'> تحدث الان </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="donation_opportunities py-5 position-relative" id="donation-opportunities">
+        <img src="./assets/images/donation-opportunity-bg-main.png" alt=""
+            class="img-fluid position-absolute w-100 h-100 top-0" style="z-index: -3" />
+        <img src="./assets/images/donation-opportunity-bg-1.png" alt="" class="img-fluid position-absolute bottom-0" />
+        <img src="./assets/images/donation-opportunity-bg-2.png" alt=""
+            class="img-fluid position-absolute bottom-0 start-0" />
+        <div class="container">
+            <p class='text-center sec-title mx-auto'>فرص التبرع</p>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 mt-4">
+                    <div class="category-card top pt-5" data-aos="fade-up">
+                        <img src="./assets/images/zakat.png" alt="" class="img-fluid mb-3" />
+                        <div class="content text-center pt-4 px-0 px-sm-2 px-xxl-4">
+                            <div class="title text-center fw-bold fs-2 mb-xl-4 mb-3">
+                                زكاة
+                            </div>
+                            <div class="verse mb-3"> { وَالْمُقِيمِينَ الصَّلَاةَ ۚ وَالْمُؤْتُونَ الزَّكَاةَ
+                                وَالْمُؤْمِنُونَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ أُولَٰئِكَ سَنُؤْتِيهِمْ أَجْرًا
+                                عَظِيمًا } [النساء:162]</div>
+                            <div class="donate-btn">
+                                <a href="#">
+                                    <img src="./assets/images/arrowright.png" alt="" class="img-fluid" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-4">
+                    <div class="category-card bottom pt-5" data-aos="fade-up">
+                        <img src="./assets/images/sadakat.png" alt="" class="img-fluid mb-3" />
+                        <div class="content text-center pt-4 px-0 px-sm-2 px-xxl-4">
+                            <div class="title text-center fw-bold fs-2 mb-xl-4 mb-3">
+                                صدقات
+                            </div>
+                            <div class="verse mb-3"> { إِنَّمَا الصَّدَقَاتُ لِلْفُقَرَاءِ وَالْمَسَاكِينِ
+                                وَالْعَامِلِينَ عَلَيْهَا وَالْمُؤَلَّفَةِ قُلُوبُهُمْ وَفِي الرِّقَابِ وَالْغَارِمِينَ
+                                وَفِي سَبِيلِ اللَّهِ } [التوبة:60]</div>
+                            <div class="donate-btn">
+                                <a href="#">
+                                    <img src="./assets/images/arrowright.png" alt="" class="img-fluid" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-4">
+                    <div class="category-card top pt-5" data-aos="fade-up">
+                        <img src="./assets/images/kafarat.png" alt="" class="img-fluid mb-3" />
+                        <div class="content text-center pt-4 px-0 px-sm-2 px-xxl-4">
+                            <div class="title text-center fw-bold fs-2 mb-xl-4 mb-3">
+                                كفارات
+                            </div>
+                            <div class="verse mb-3"> { وَالْجُرُوحَ قِصَاصٌ فَمَن تَصَدَّقَ بِهِ فَهُوَ كَفَّارَةٌ لَّهُ
+                                ۚ وَمَن لَّمْ يَحْكُم بِمَا أَنزَلَ اللَّهُ فَأُولَـٰئِكَ هُمُ الظَّالِمُونَ }
+                                [المائدة:45]</div>
+                            <div class="donate-btn">
+                                <a href="#">
+                                    <img src="./assets/images/arrowright.png" alt="" class="img-fluid" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-4">
+                    <div class="category-card bottom pt-5" data-aos="fade-up">
+                        <img src="./assets/images/blood-donation.png" alt="" class="img-fluid mb-3" />
+                        <div class="content text-center pt-4 px-0 px-sm-2 px-xxl-4">
+                            <div class="title text-center fw-bold fs-2 mb-xl-4 mb-3">
+                                تبرع بالدم
+                            </div>
+                            <div class="verse mb-3"> { وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعًا }
+                                [المائدة:32]
+                            </div>
+                            <div class="donate-btn">
+                                <a href="#">
+                                    <img src="./assets/images/arrowright.png" alt="" class="img-fluid" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-4">
+                    <div class="category-card top pt-5" data-aos="fade-up">
+                        <img src="./assets/images/used-donation.png" alt="" class="img-fluid mb-3" />
+                        <div class="content text-center pt-4 px-0 px-sm-2 px-xxl-4">
+                            <div class="title text-center fw-bold fs-2 mb-xl-4 mb-3">
+                                التبرعات العينية
+                            </div>
+                            <div class="verse mb-3"> ﴿ وَيُؤثِرونَ عَلى أَنفُسِهِم وَلَو كانَ بِهِم خَصاصَةٌ وَمَن يوقَ
+                                شُحَّ نَفسِهِ فَأُولئِكَ هُمُ المُفلِحونَ﴾
+                            </div>
+                            <div class="donate-btn">
+                                <a href="#">
+                                    <img src="./assets/images/arrowright.png" alt="" class="img-fluid" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cases py-5" id="cases">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <p class='mb-0 sec-title '>حالات التبرع </p>
+                <Link to='/cases'>
+                <button class="btn more-btn"> رؤية المزيد <i class='bi bi-arrow-left'></i> </button>
+                </Link>
+            </div>
+            <div class="row cases_cards">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="CaseCard mb-5" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="./assets/images/child.jpeg" alt="" class="img-fluid w-100 mb-3" />
+                        <div class="content p-2">
+                            <div class="title text-center mb-3 fw-bold"> طفل يتيم </div>
+                            <div class="description text-center mb-3"> طفل يتيم يحتاج إلى كفالة شهرية </div>
+                            <div class="money_section mb-3">
+                                <div class="progress mb-2" role="progressbar" aria-label="Basic example"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 25%"></div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class='m-0'> EGP 20000 </p>
+                                        <p class='m-0 fw-bold'> الهدف </p>
+                                    </div>
+                                    <div>
+                                        <p class='m-0'> EGP 5000</p>
+                                        <p class='m-0 fw-bold'> المتبقى </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="donation">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text  rounded-0 rounded-end" id="basic-addon1"> <i
+                                            class="fa-solid fa-money-bill-1-wave"></i> </span>
+                                    <input type="number" class="form-control rounded-0 rounded-start"
+                                        placeholder="ادخل قيمة التبرع  " />
+                                </div>
+                                <button class='donate-button btn text-white w-100' onClick={handleDonation}>تبرع
+                                    الان</button>
+                            </div>
+                            <div class="charity-sec d-flex justify-content-between align-items-center mt-3">
+                                <img src="./assets/images/misr.jpeg" alt="" class="img-fluid d-block charity-img" />
+                                <p class="charity-name mb-0 ms-auto me-2 fw-bold">مصر الخير</p>
+                                <button class='btn chat-btn'> تحدث الان </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="CaseCard mb-5" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="./assets/images/child.jpeg" alt="" class="img-fluid w-100 mb-3" />
+                        <div class="content p-2">
+                            <div class="title text-center mb-3 fw-bold"> طفل يتيم </div>
+                            <div class="description text-center mb-3"> طفل يتيم يحتاج إلى كفالة شهرية </div>
+                            <div class="money_section mb-3">
+                                <div class="progress mb-2" role="progressbar" aria-label="Basic example"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 50%"></div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class='m-0'> EGP 2400 </p>
+                                        <p class='m-0 fw-bold'> الهدف </p>
+                                    </div>
+                                    <div>
+                                        <p class='m-0'> EGP 1200</p>
+                                        <p class='m-0 fw-bold'> المتبقى </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="donation">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text  rounded-0 rounded-end" id="basic-addon1"> <i
+                                            class="fa-solid fa-money-bill-1-wave"></i> </span>
+                                    <input type="number" class="form-control rounded-0 rounded-start"
+                                        placeholder="ادخل قيمة التبرع  " />
+                                </div>
+                                <button class='donate-button btn text-white w-100' onClick={handleDonation}>تبرع
+                                    الان</button>
+                            </div>
+                            <div class="charity-sec d-flex justify-content-between align-items-center mt-3">
+                                <img src="./assets/images/misr.jpeg" alt="" class="img-fluid d-block charity-img" />
+                                <p class="charity-name mb-0 ms-auto me-2 fw-bold">مصر الخير</p>
+                                <button class='btn chat-btn'> تحدث الان </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="CaseCard mb-5" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="./assets/images/child.jpeg" alt="" class="img-fluid w-100 mb-3" />
+                        <div class="content p-2">
+                            <div class="title text-center mb-3 fw-bold"> طفل يتيم </div>
+                            <div class="description text-center mb-3"> طفل يتيم يحتاج إلى كفالة شهرية </div>
+                            <div class="money_section mb-3">
+                                <div class="progress mb-2" role="progressbar" aria-label="Basic example"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 10%"></div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class='m-0'> EGP 4500 </p>
+                                        <p class='m-0 fw-bold'> الهدف </p>
+                                    </div>
+                                    <div>
+                                        <p class='m-0'> EGP 4050</p>
+                                        <p class='m-0 fw-bold'> المتبقى </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="donation">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text  rounded-0 rounded-end" id="basic-addon1"> <i
+                                            class="fa-solid fa-money-bill-1-wave"></i> </span>
+                                    <input type="number" class="form-control rounded-0 rounded-start"
+                                        placeholder="ادخل قيمة التبرع  " />
+                                </div>
+                                <button class='donate-button btn text-white w-100' onClick={handleDonation}>تبرع
+                                    الان</button>
+                            </div>
+                            <div class="charity-sec d-flex justify-content-between align-items-center mt-3">
+                                <img src="./assets/images/misr.jpeg" alt="" class="img-fluid d-block charity-img" />
+                                <p class="charity-name mb-0 ms-auto me-2 fw-bold">مصر الخير</p>
+                                <button class='btn chat-btn'> تحدث الان </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="CaseCard mb-5" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="./assets/images/child.jpeg" alt="" class="img-fluid w-100 mb-3" />
+                        <div class="content p-2">
+                            <div class="title text-center mb-3 fw-bold"> طفل يتيم </div>
+                            <div class="description text-center mb-3"> طفل يتيم يحتاج إلى كفالة شهرية </div>
+                            <div class="money_section mb-3">
+                                <div class="progress mb-2" role="progressbar" aria-label="Basic example"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class='m-0'> EGP 8600 </p>
+                                        <p class='m-0 fw-bold'> الهدف </p>
+                                    </div>
+                                    <div>
+                                        <p class='m-0'> EGP 860</p>
+                                        <p class='m-0 fw-bold'> المتبقى </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="donation">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text  rounded-0 rounded-end" id="basic-addon1"> <i
+                                            class="fa-solid fa-money-bill-1-wave"></i> </span>
+                                    <input type="number" class="form-control rounded-0 rounded-start"
+                                        placeholder="ادخل قيمة التبرع  " />
+                                </div>
+                                <button class='donate-button btn text-white w-100' onClick={handleDonation}>تبرع
+                                    الان</button>
+                            </div>
+                            <div class="charity-sec d-flex justify-content-between align-items-center mt-3">
+                                <img src="./assets/images/misr.jpeg" alt="" class="img-fluid d-block charity-img" />
+                                <p class="charity-name mb-0 ms-auto me-2 fw-bold">مصر الخير</p>
+                                <button class='btn chat-btn'> تحدث الان </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class='contact_us py-5' id="contact">
+        <div class="container mb-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 report-details mb-3 mb-lg-0">
+                    <div class="content rounded p-3">
+                        <h3>
+                            طريقة التبرع ؟
+                        </h3>
+                        <div class='mt-4'>
+                            <div class="d-flex mb-3">
+                                <span class='d-block p-2 border rounded-circle text-center ms-3'
+                                    style=" width: 48px; height: 48px; font-size: 20px; font-weight: bold; "> 1 </span>
+                                <div class="content">
+                                    <h5> الخطوة الاولى </h5>
+                                    <p>
+                                        قم بتسجيل الدخول الى حسابك الالكترونى
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <span class='d-block p-2 border rounded-circle text-center ms-3'
+                                    style=" width: 48px; height: 48px; font-size: 20px; font-weight: bold; "> 2 </span>
+                                <div class="content">
+                                    <h5> الخطوة الثانية </h5>
+                                    <p>
+                                        قم باختيار الحالة التى تريد التبرع لها و ادخل مبلغ التبرع و طريقة التبرع
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <span class='d-block p-2 border rounded-circle text-center ms-3'
+                                    style=" width: 48px; height: 48px; font-size: 20px; font-weight: bold; "> 3 </span>
+                                <div class="content">
+                                    <h5> الخطوة الثالثة </h5>
+                                    <p>
+                                        بعد انهاء التبرع تستطيع مشاهدة التبرعات الخاصة بك من خلال حسابك الالكترونى
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 report-form d-flex justify-content-center align-items-center">
+                    <div class="content rounded bg-white p-3 w-100">
+                        <h3 class='text-center mb-4 position-relative fw-bold mx-auto' style="width: 350px"> تواصل معنا
+                        </h3>
+                        <Form method="post" class="needs-validation" noValidate>
+                            <div class="d-flex justify-content-evenly align-items-center flex-wrap">
+                                <div class="input">
+                                    <label for="name" class="form-label"></label>
+                                    الاسم
+                                    </label>
+                                    <div class="input-group has-validation mb-4">
+                                        <span class="input-group-text rounded-0 rounded-end" id="basic-addon1">
+                                            <i class="fa-regular fa-user"></i>
+                                        </span>
+                                        <input type="text" id="name" name="name"
+                                            class="form-control rounded-0 rounded-start" placeholder=" اكتب اسمك "
+                                            aria-label="Name" aria-describedby="basic-addon1" />
+                                        <div class="invalid-feedback fs-6"></div>
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <label for="email" class="form-label">
+                                        البريد الإلكتروني
+                                    </label>
+                                    <div class="input-group has-validation mb-4">
+                                        <span class="input-group-text rounded-0 rounded-end" id="basic-addon1">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </span>
+                                        <input type="email" id="email" name="email"
+                                            class="form-control rounded-0 rounded-start"
+                                            placeholder=" ادخل بريدك الإلكتروني " aria-label="Email"
+                                            aria-describedby="basic-addon1" />
+                                        <div class="invalid-feedback d-block fs-6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-evenly flex-wrap">
+                                <div class="input">
+                                    <label for="phone" class="form-label">
+                                        رقم الهاتف
+                                    </label>
+                                    <div class="input-group has-validation mb-4">
+                                        <span class="input-group-text rounded-0 rounded-end" id="basic-addon1">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </span>
+                                        <input type="number" id="phone" name="phone"
+                                            class="form-control rounded-0 rounded-start" placeholder=" ادخل رقم هاتفك  "
+                                            aria-label="Phone" aria-describedby="basic-addon1" />
+                                        <div class="invalid-feedback d-block fs-6"></div>
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <label for="message" class="form-label">
+                                        الرسالة
+                                    </label>
+                                    <div class="input-group has-validation mb-4">
+                                        <span class="input-group-text rounded-0 rounded-end" id="basic-addon1">
+                                            <i class="fa-solid fa-message"></i>
+                                        </span>
+                                        <textarea id="message" name="message"
+                                            class="form-control rounded-0 rounded-start" placeholder=" اكتب رسالتك "
+                                            aria-label="Message" aria-describedby="basic-addon1"></textarea>
+                                        <div class="invalid-feedback d-block fs-6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="submit-btn btn d-block w-50 py-2 mt-4 mx-auto fs-5 text-white" type="submit">
+                                ارسال الان <i class="bi bi-arrow-left"></i>
+                            </button>
+                        </Form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class='footer'>
+        <footer class='first-footer '>
+            <div class="container border-bottom">
+                <div class="row py-3 align-items-center">
+                    <div class="col-12 col-md-6">
+                        <img src="./assets/images/footer_logo.png" alt="" class="img-fluid" />
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="input-group ">
+                            <input type="text" class="form-control bg-transparent" placeholder="بريدك الالكترونى"
+                                aria-label="بريدك الالكترونى" aria-describedby="basic-addon2" />
+                            <div class="input-group-append me-1">
+                                <button class='btn '>اشترك <i class="fa-solid fa-arrow-left me-2"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class='second-footer '>
+            <div class="container border-bottom">
+                <div class="row py-4">
+                    <div class="col-12 col-sm-8 col-md-6 col-xl-3 mb-3">
+                        <h2>عن المنصة</h2>
+                        <div class="content">
+                            منصة سبل من افضل المنصات التى تقوم بجمع التبرعات الرقمية. تبرع الان وساهم فى احداث فارق فى
+                            حياة الآخرين.
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-3 col-xl-2 mb-3">
+                        <h2>حسابى</h2>
+                        <ul class="list-unstyled">
+                            <li> <i class="bi bi-chevron-double-left ms-2"></i>حسابى</li>
+                            <li> <i class="bi bi-chevron-double-left ms-2"></i>تبرعاتى </li>
+                            <li> <i class="bi bi-chevron-double-left ms-2"></i>سلة مشتريات</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-3 col-xl-2 mb-3">
+                        <h2>روابط مهمة</h2>
+                        <ul class="list-unstyled">
+                            <li> <i class="bi bi-chevron-double-left ms-2"></i>من نحن</li>
+                            <li> <i class="bi bi-chevron-double-left ms-2"></i>الدعم الفنى</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-3 col-xl-2 mb-3">
+                        <h2>تواصل معنا</h2>
+                        <ul class="list-unstyled">
+                            <li> <i class="bi bi-chevron-double-left ms-2"></i>واتساب: 01554138144</li>
+                            <li> <i class="bi bi-chevron-double-left ms-2"></i>موبايل: 01554138144</li>
+                            <li> <i class="bi bi-chevron-double-left ms-2"></i> البريد: info@subul.me</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-3 col-xl-3 mb-3">
+                        <h2>تابعنا على</h2>
+                        <div class="social-icons d-flex mb-3">
+                            <i class="fa-brands fa-facebook-f fs-6 ms-3 social-icon"></i>
+                            <i class="fa-brands fa-twitter fs-6 ms-3 social-icon"></i>
+                            <i class="fa-brands fa-instagram fs-6 ms-3 social-icon"></i>
+                        </div>
+                        <div class="mobile-apps ">
+                            <h3 class='mb-4'>تطبيقات الجوال</h3>
+                            <div class="download-icons d-flex justify-content-between">
+                                <img src="./assets/images/android_logo.png" alt="" class="img-fluid" />
+                                <img src="./assets/images/apple_logo.png" alt="" class="img-fluid " />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="third-footer py-3 text-center">
+            <p class='m-0'>جميع الحقوق محفوظة لمنصة سبل © 2025 </p>
+        </footer>
+    </div>
+    <script src="./assets/js/jquery-3.1.1.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/85c5dfec3f.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

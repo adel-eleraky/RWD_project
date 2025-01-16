@@ -1,0 +1,133 @@
+$gradient-start: #91683A;
+$gradient-end: #D9C28C;
+$gradient-angle-step: 18deg;
+$animation-duration: .8s;
+
+
+@keyframes linearGradient_1 {
+
+    0% {
+        background: linear-gradient($gradient-angle-step, $gradient-start 10.92%, $gradient-end 92.92%);
+    }
+
+    @for $i from 1 through 20 {
+        #{($i * 5%)} {
+            background: linear-gradient(#{($gradient-angle-step * $i)},
+                $gradient-start 10.92%,
+                $gradient-end 92.92%);
+        }
+    }
+}
+
+header {
+    .header-img {
+        &::before {
+            background: linear-gradient($gradient-angle-step, $gradient-start 10.92%, $gradient-end 92.92%);
+            animation: linearGradient_1 $animation-duration infinite linear;
+        }
+    }
+}
+
+@keyframes linearGradient_2 {
+
+    0% {
+        background: linear-gradient($gradient-angle-step, #EDDCC8, white);
+    }
+
+    @for $i from 1 through 20 {
+        #{($i * 5%)} {
+            background: linear-gradient(#{($gradient-angle-step * $i)},
+            #EDDCC8, white);
+        }
+    }
+}
+
+.category-card.top::before{
+    background: linear-gradient($gradient-angle-step);
+    animation: linearGradient_2 .8s infinite linear;
+}
+
+
+@keyframes linearGradient_3 {
+
+    0% {
+        background: linear-gradient($gradient-angle-step,  white, #EDDCC8);
+    }
+
+    @for $i from 1 through 20 {
+        #{($i * 5%)} {
+            background: linear-gradient(#{($gradient-angle-step * $i)},
+            white ,#EDDCC8);
+        }
+    }
+}
+
+.category-card.bottom::before{
+    background: linear-gradient($gradient-angle-step);
+    animation: linearGradient_3 .8s infinite linear;
+}
+
+
+
+$top_badge_1_3_values: 100% , 105% , 110% , 105% , 100%;
+
+@keyframes badge_1_3_animation {
+
+    @for $i from 0 through 4  {
+        #{($i * 25%)} {
+            top: nth($top_badge_1_3_values, $i + 1)
+        }
+    }
+}
+
+header {
+    .img-column {
+        .header-img-badge {
+            &.badge-1 {
+                animation-name: badge_1_3_animation;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+        }
+    }
+}
+
+header {
+    .img-column {
+        .header-img-badge {
+            &.badge-3 {
+                animation-name: badge_1_3_animation;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+        }
+    }
+}
+
+
+$top__badge_2_values: -45px , -70px , -75px , -70px , -45px;
+@keyframes badge_2_animation {
+    @for $i from 0 through 4  {
+        #{($i * 25%)} {
+            top: nth($top__badge_2_values, $i + 1)
+        }
+    }
+}
+
+header {
+    .img-column {
+        .header-img-badge {
+            &.badge-2 {
+                animation-name: badge_2_animation;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+        }
+    }
+}
+
+
+

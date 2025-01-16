@@ -1,0 +1,768 @@
+/* start nav */
+nav {
+    position: absolute;
+    width: calc(100vw - 20%);
+    background-color: white;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 35px;
+    margin-top: 20px;
+}
+
+.first-nav {
+    background-color: white;
+    border-bottom: 2px solid #927238;
+    border-radius: 30px;
+    height: 80px;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #91683A;
+}
+
+.logo {
+    width: 65px;
+    min-width: 40px;
+}
+
+.acc_link {
+    background-image: linear-gradient(#C7AB77, white);
+    text-align: center;
+    width: 64px;
+    height: 77px;
+}
+.acc_link::after,
+.notification_icon::after {
+    display: none;
+}
+
+.badge {
+    right: 25px;
+    top: -5px;
+    background-color: #C7AB77;
+}
+
+.offcanvas {
+    width: 300px !important;
+    background-color: #EDDCC8;
+}
+
+.offcanvas .links a {
+    display: block;
+    padding: 15px 0;
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 1px solid #927238;
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 992px) {
+    .navbar-toggler {
+        display: block !important;
+    }
+
+    .nav-links-col {
+        display: none !important;
+    }
+}
+
+/* end nav */
+/* start header */
+header {
+    background: linear-gradient(180deg, rgba(250, 250, 250, 0) 0%, rgba(223, 212, 192, 0.5) 100%);
+    background-image: url("./../images/BG.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 135px !important;
+}
+
+header .img-column {
+    height: 350px;
+}
+
+header .header-img {
+    width: fit-content;
+    position: relative;
+}
+
+header .header-img::after {
+    content: "";
+    width: calc(100% + 60px);
+    height: calc(100% + 60px);
+    border-radius: 50%;
+    position: absolute;
+    background-color: #DFD4C0;
+    z-index: -1;
+    top: -30px;
+    left: -30px;
+}
+
+header .header-img::before {
+    content: "";
+    width: calc(100% + 130px);
+    height: calc(100% + 130px);
+    border-radius: 50%;
+    position: absolute;
+    /* background: linear-gradient(0deg, #91683A 10.92%, #D9C28C 92.92%); */
+    z-index: -1;
+    top: -65px;
+    left: -65px;
+}
+
+
+header .img-column .header-img-badge {
+    position: absolute;
+    background: linear-gradient(186.29deg, #F0D5A0 4.96%, rgba(255, 255, 255, 0) 80.72%);
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+header .img-column .header-img-badge.badge-1 {
+    top: 100%;
+    left: 92%;
+}
+
+header .img-column .header-img-badge.badge-2 {
+    top: -45px;
+    left: 100%;
+}
+
+header .img-column .header-img-badge.badge-3 {
+    top: 100%;
+    left: -17%;
+}
+
+header .img-column .quote {
+    position: absolute;
+    font-family: 'Amiri', serif;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 23px -3px gray;
+}
+
+header .img-column .quote.quote-1 {
+    top: -10%;
+    left: -35%;
+}
+
+header .img-column .quote.quote-2 {
+    bottom: -35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 225px;
+}
+
+header .img-column {
+    position: relative;
+}
+
+header .verse-column .content {
+    padding-top: 50px;
+    font-family: 'Amiri', serif;
+}
+
+header .verse-column .content p:first-child {
+    font-size: 32px;
+}
+
+header .verse-column .content .verse {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+    margin-bottom: 13px;
+}
+
+header .verse-column .content p:last-of-type {
+    font-size: 24px;
+}
+
+header .verse-column .content button,
+header .verse-column .content button:hover {
+    background: #91683A;
+}
+
+@media (max-width: 992px) {
+    header .verse-column {
+        text-align: center;
+        order: 2;
+    }
+
+    header .verse-column .content button {
+        margin: 20px auto 0;
+    }
+}
+
+@media (max-width: 550px) {
+    header .header-img {
+        width: 250px;
+    }
+
+    header .img-column .header-img-badge.badge-1 {
+        left: 98%;
+    }
+
+    header .img-column .header-img-badge.badge-3 {
+        left: -29%;
+    }
+
+    header .img-column .header-img-badge.badge-2 {
+        left: 108%;
+    }
+
+    header .img-column .quote.quote-1 {
+        left: -50%;
+    }
+
+    header .img-column .quote.quote-2 {
+        bottom: -46%;
+        width: 170px;
+    }
+}
+
+@media (max-width: 490px) {
+    header .header-img {
+        width: 200px;
+    }
+
+    header .img-column .header-img-badge.badge-1 {
+        left: 108%;
+        width: 60px;
+    }
+
+    header .img-column .header-img-badge.badge-3 {
+        left: -38%;
+        width: 60px;
+    }
+
+    header .img-column .header-img-badge.badge-2 {
+        left: 112%;
+        width: 60px;
+    }
+
+    header .img-column .quote.quote-1 {
+        left: -62%;
+    }
+
+    header .img-column .quote.quote-2 {
+        bottom: -60%;
+        width: 145px;
+    }
+}
+
+@media (max-width: 450px) {
+    header .img-column .quote.quote-1 {
+        display: none;
+    }
+}
+
+/* end header */
+
+/* start campaigns */
+.donation_opportunities .sec-title,
+.Campaigns .sec-title,
+.cases .sec-title {
+    font-family: "Tajawal", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67.2px;
+    text-align: right;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.donation_opportunities .sec-title::after,
+.Campaigns .sec-title::after,
+.cases .sec-title::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    border-radius: 50%;
+    background-image: linear-gradient(150.19deg, #DFD4C0 -8.79%, rgba(255, 255, 255, 0) 117.88%);
+}
+
+.donation_opportunities .sec-title,
+.Campaigns .sec-title,
+.cases .sec-title {
+    width: fit-content;
+}
+
+.Campaigns {
+    margin-top: 90px;
+}
+
+.Campaigns p::after {
+    top: 5px;
+    right: 160px;
+}
+
+.Campaigns .campaign-card:first-child {
+    margin-top: 60px;
+}
+
+.CampaignCard {
+    height: fit-content;
+}
+
+.Campaigns .content {
+    font-family: "Tajawal", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.Campaigns .more-btn {
+    color: white;
+    border: 1px solid #91683A;
+    background-color: #91683A;
+    width: 150px;
+}
+
+.Campaigns h1 {
+    font-size: 60px;
+}
+
+@media (max-width: 992px) {
+    .Campaigns .content {
+        text-align: center;
+    }
+
+    .Campaigns .sec-title {
+        margin: auto;
+    }
+}
+
+/* start campaign card */
+.CampaignCard {
+    position: relative;
+    background-color: white;
+}
+
+.CampaignCard::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 10px);
+    border-radius: 24px;
+    z-index: -1;
+    top: -10px;
+    background-image: linear-gradient(#EDDCC8, white);
+}
+
+.CampaignCard .content .money_section .money_remaining {
+    color: var(--secondary-color);
+}
+
+.CampaignCard .content .time-left div {
+    width: 23%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #EDDCC8;
+}
+
+.CampaignCard .content .donation button:first-child {
+    width: 78%;
+}
+
+.CampaignCard .content .donation button:last-child {
+    width: 20%;
+}
+
+.CampaignCard .content .donation .donate-button {
+    background-color: #91683A;
+    color: black;
+}
+
+.CampaignCard .content .donation .donate-button:hover {
+    color: white;
+}
+
+.CampaignCard .content .donation .addToCart-button {
+    border: 1px solid #91683A;
+}
+
+.CampaignCard .content .donation .addToCart-button:hover {
+    background-color: #91683A;
+}
+
+.CampaignCard .donation .addToCart-button:hover i {
+    color: white !important;
+}
+
+.CampaignCard {
+    padding: 15px;
+    border-radius: 24px;
+    box-shadow: 0px 30px 28px -6px #C5C5C5;
+}
+
+.CampaignCard .title {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Tajawal", sans-serif;
+}
+
+.CampaignCard .money_section {
+    background-color: #EDDCC8;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.CampaignCard .money_section .progress {
+    height: 8px;
+}
+
+.CampaignCard .money_section .progress-bar {
+    background-color: #343D40;
+}
+
+.CampaignCard .charity-sec .chat-btn {
+    width: fit-content;
+    background-color: #91683A;
+    color: white;
+}
+
+.CampaignCard .charity-sec .charity-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* end campaign card */
+/* end campaigns */
+
+/* start donation opportunities */
+
+.donation_opportunities p::after {
+    top: 6px;
+    left: -15px;
+}
+
+/* start categories */
+.category-card {
+    font-family: 'Amiri', serif;
+    box-shadow: 23px 75px 171px 0px #2524241A;
+    position: relative;
+    background-color: white;
+    border-radius: 18px;
+    width: 98%;
+    height: 300px;
+    margin-bottom: 70px;
+}
+
+.category-card>img {
+    width: 150px;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.category-card.top::before,
+.category-card.bottom::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border-radius: 24px;
+    z-index: -1;
+}
+
+.category-card.bottom::before {
+    background: linear-gradient(white, #EDDCC8);
+}
+
+.category-card.top::before {
+    background: linear-gradient(#EDDCC8, white);
+}
+
+.category-card .content .verse {
+    font-family: "Tajawal", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: center;
+    color: #696969;
+}
+
+.category-card .content .donate-btn {
+    background-color: white;
+    border: 1px solid #353D40;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* end categories */
+/* end donation opportunities */
+
+
+/* start donation cases */
+.cases p::after {
+    top: 10px;
+    left: -15px;
+}
+
+@media (max-width: 768px) {
+    .cases .sec-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cases .sec-title {
+        font-size: 30px;
+    }
+}
+
+.cases .more-btn {
+    color: #91683A;
+    border: 1px solid #91683A;
+    border-radius: 35px;
+}
+
+.cases .swiper-pagination-bullet-active {
+    background-color: #91683A;
+}
+
+.cases .more-btn:hover {
+    background-color: #91683A;
+    color: white;
+}
+
+/* end donation cases */
+
+/*  start case card */
+.CaseCard .content .description {
+    height: 55px;
+}
+
+.CaseCard .content .money_section .money_remaining {
+    color: var(--secondary-color);
+}
+
+.CaseCard .content .time-left div {
+    width: 23%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #EDDCC8;
+}
+
+.CaseCard .content .donation button:first-child {
+    width: 78%;
+}
+
+.CaseCard .content .donation button:last-child {
+    width: 20%;
+}
+
+.CaseCard .content .donation .donate-button {
+    background-color: #91683A;
+    color: black;
+}
+
+.CaseCard .content .donation .donate-button:hover {
+    color: white;
+}
+
+.CaseCard .content .donation .addToCart-button {
+    border: 1px solid #91683A;
+}
+
+.CaseCard .content .donation .addToCart-button:hover {
+    background-color: #91683A;
+}
+
+.CaseCard .donation .addToCart-button:hover i {
+    color: white !important;
+}
+
+.CaseCard {
+    padding: 15px;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.CaseCard .title {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Tajawal", sans-serif;
+}
+
+.CaseCard .money_section {
+    background-color: #EDDCC8;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.CaseCard .money_section .progress {
+    height: 8px;
+}
+
+.CaseCard .money_section .progress-bar {
+    background-color: #343D40;
+}
+
+.CaseCard .charity-sec .chat-btn {
+    width: fit-content;
+    background-color: #91683A;
+    color: white;
+}
+
+.CaseCard .charity-sec .charity-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/*  end case card */
+
+/* start contact */
+
+.contact_us {
+    background-image: linear-gradient(to left, #d5bfa6, white);
+}
+.contact_us .report-details  > div {
+    background-image: url("./../images/used-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.contact_us .report-details .content h3 {
+    font-family: "tajawal" , sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.contact_us .report-details .content h3::after,
+.contact_us .report-form .content h3::after,
+.contact_us .items-sec h2::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: linear-gradient(150.19deg, #DFD4C0 -8.79%, rgba(255, 255, 255, 0) 117.88%);
+}
+.contact_us .report-details .content h3::after {
+    top: -5px;
+    right: 0px;
+}
+.contact_us .report-form .content h3::after {
+    left: 25%;
+    top: -5px;
+}
+.contact_us .report-form .content {
+    box-shadow: 0px 0px 20px -10px #b8acac;
+}
+.contact_us .report-form .content .input {
+    width: 288px !important;
+}
+.contact_us .submit-btn {
+    background-color: #91683A;
+}
+@media (max-width: 1200px) {
+    .contact_us .used-items div {
+        width: 415px;
+    }
+}
+@media (max-width: 992px) {
+    .contact_us .used-items div {
+        width: 335px;
+    }
+}
+@media (max-width: 768px) {
+    .contact_us .used-items div {
+        width: 350px;
+    }
+}
+.contact_us .items-sec h2::after {
+    top: 0;
+    left: 1%;
+}
+/* end contact */
+/*  start footer */
+.footer {
+    background: radial-gradient(circle at left, rgb(209 166 110 / 60%), transparent 40%),
+        radial-gradient(circle at right, rgb(174 137 89 / 60%), transparent 40%), #000;
+}
+
+.first-footer,
+.second-footer {
+    /* background-color: var(--main-color); */
+    color: white;
+}
+
+.first-footer .input-group input {
+    border-radius: 35px !important;
+}
+
+.first-footer .input-group input::placeholder {
+    color: white;
+}
+
+.first-footer button,
+.first-footer button:hover {
+    background-color: #EDDCC8;
+    color: #91683A;
+    border-radius: 35px !important;
+}
+
+.second-footer .download-icons img {
+    width: 48%;
+}
+
+.second-footer h2 {
+    margin-bottom: 25px;
+}
+
+.second-footer .social-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2F312D;
+}
+
+.second-footer li {
+    margin-bottom: 10px;
+}
+
+.second-footer li:hover {
+    color: #9f8260;
+}
+
+.third-footer {
+    color: white;
+}
+
+/*  end footer */
